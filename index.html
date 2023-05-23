@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b0ec0f6a3e.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0ec0f6a3e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imgs/favicon.ico.png" type="image/x-icon">
+    <link rel = "stylesheet" href = "css/style.css">
+    <title>Valhalla</title>
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+      </div>
+      
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+          <li class = "logo">
+            <a href = "#">
+            <h1>
+              <span><i class="fa-solid fa-dumbbell"></i></span>
+              <span id = "mainName">Valhalla</span>
+              
+              </a>
+            </h1>
+            </li>
+          <li><a href = "#image-slider">The Gym</a></li>
+          <li><a href = "#workouts">Workouts</a></li>
+          <li><a href = "#prices">Prices</a></li>
+          <li><a href = "#footer">Location</a></li>
+          <li><a href = "#footer">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <!--INTRO-->
+
+      <section id="intro">
+        <div class="intro-container">
+          <strong><p class="intro-name">Welcome to sportscenter <span>Valhalla</span></p><strong>
+          <h3 class = "intro-hashtag">#WorthyAthletes</h3>
+        </div>
+      </section>
+
+      <!--QUOTE-->
+
+      <section class = "quote-block">
+        <h2 class = "quote">"There is no reason to be alive if you can't do deadlift."</h2>
+        <p class = "author">Jon Pall Sigmarsson - 1988</p>
+      </section>
+
+      <!--SLIDER-->
+
+      <section id = "image-slider">
+        <div class = "arrow-left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class = "arrow-right">
+          <i class = "fa-solid fa-arrow-right"></i>
+        </div>
+        <div class = "caption">
+          <h1>Fitness Gym</h1>
+          <p>A gym with lots of free weights and some great machines.</p>
+          </section>
+
+      <!--WORKOUTS-->
+      <section id = "workouts">
+  <h2> Build your <strong>best</strong> body </h2>
+  <div class = "card-container">
+    <div class = "card">
+      <h3>Weight Lifting</h3>
+      <div class = "icon-shape">
+      <i class="fa-solid fa-dumbbell" id = "card-icon"></i>
+      </div>
+      <p>A form of strength training that involves the use of weights or resistance to increase muscle size, strength, and endurance.</p>
+    </div>
+    
+    <div class = "card">
+      <h3>Calisthenics</h3>
+      <i class="fa-solid fa-person-running" id = "card-icon"></i>
+      <p>A form of exercise that uses bodyweight movements to improve strength, endurance, and flexibility.</p>
+    </div>
+    
+    <div class = "card">
+      <h3>Cardio</h3>
+      <i class="fa-solid fa-heart-pulse" id = "card-icon"></i>
+      <p>Cardio is a type of exercise that increases heart rate and breathing to improve cardiovascular health and endurance.</p>
+    </div>
+    
+    <div class = "card">
+      <h3>Yoga</h3>
+      <i class="fa-solid fa-leaf" id = "card-icon"></i>
+      <p>Yoga is a physical, mental, and spiritual practice that involves various postures, breathing techniques, and meditation.</p>
+    </div>
+  </div>
+</section>
+
+<!--BMI CALCULATOR-->
+
+<div class = 'container'>
+<h2>BMI Calculator</h2>
+
+<label for="weight">Weight (kg)</label>
+<input id="weight" type="number"><br>
+<label for="height">Height (cm)</label>
+<input id="height" type="number"><br>
+<button onclick="calculateBmi()">Submit</button>
+<button onclick="reload()">Clear</button>
+
+<h4 id="heading"></h4>
+<p id="bmi-output"></p>
+<p id="message"></p>
+</div>
+
+
+      <!--QUOTE-->
+
+      <section class = "quote-block">
+        <h2 class = "quote">"The pain you feel today will be the strength you feel tomorrow."</h2>
+        <p class = "author">Jay Cutler - 4x time Mr. Olympia champion</p>
+      </section>
+      <!--PRICES-->
+      <section id = "prices">
+        <div class = "pricelist">
+          <h2>PRICELIST</h2>
+        </div>
+        <div class = "price-container1">
+          <div class = "price-card">
+            <h4> Gym Entrance </h4>
+            <h1> 90Kč</h1>
+            <p> 70Kč for students <p>
+          </div>
+        </div>
+        <div class = "price-text"><p>If you visit Valhalla regularly, we have some <strong>deals</strong> for you :)</p></div>
+        
+        <div class = "price-container2">
+          
+          <div class = "price-card">
+            <h4> Ten Entrances </h4>
+            <h1> 810Kč</h1>
+            <p> 630Kč for students </p>
+          </div>
+          
+          <div class = "price-card">
+            <h4> One Month Ticket </h4>
+            <h1> 900Kč</h1>
+            <p> 700Kč for students </p>
+          </div>
+          
+          <div class = "price-card">
+            <h4> One Year Ticket </h4>
+            <h1> 9600Kč</h1>
+            <p> 7200Kč for students <p>
+          </div>
+          
+        </div>
+      </section>
+      <hr>
+      <!--FOOTER-->
+      <section id="footer">
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.8560774521884!2d14.209911715743297!3d50.778241479522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47099f9f02e9fc95%3A0xc9a719d9ebb16523!2sSportcentrum%20Valhalla!5e0!3m2!1scs!2scz!4v1681840316590!5m2!1scs!2scz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="footer-text">
+    <span class="footer1"><h3>Contacts</h3>
+<p><i class="fa-solid fa-phone" id = "small-icon"></i>+420 733 218 687</p>
+<p><i class="fa-solid fa-envelope" id="small-icon"></i>info@valhalladc.cz</p>
+<p><i class="fa-solid fa-clock" id = "small-icon"></i>Open everyday from 6:00 to 22:00</p>
+<p><i class="fa-solid fa-map-pin" id = "small-icon"></i>U Plovárny 1264/10c, 405 02 Děčín</p>
+<p class = "rights">© 2023 Ondřej Malík. All rights reserved.</p>
+    </span> 
+    <span class = "footer2"><h3>Links</h3>
+      <div class = "links">
+      <a href = "https://gymbeam.cz/velky-jarni-vyprodej?campaignid=1629934712&adgroupid=70544700228&gclid=CjwKCAjw__ihBhADEiwAXEazJogOdvaijdBbmub_r44y8QOIoIBhP3gewwwx43UXNU8WH9pIkDH9IBoC_BAQAvD_BwE"><p>Eshop</p></a>
+        <a href = "https://www.valhalladc.cz/"><p>OG Website</p></a>
+      <a href = "https://www.valhalladc.cz/build/uploads/pdf/obchodni-podminky.pdf"><p>Terms and Conditions</p></a>
+      <a href = "https://www.instagram.com/valhalla_dc/"><i class="fa-brands fa-instagram"></i></a>
+      
+      </div>
+    </span>
+  </div>
+   
+</section>
+
+<!--SCROLL JS-->
+    <script src = "js/scrollreveal.min.js"></script>
+
+<!--MAIN JS-->
+    <script src = "/js/script.js"></script>
+</body>
+</html>

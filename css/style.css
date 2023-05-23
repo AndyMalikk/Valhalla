@@ -1,0 +1,430 @@
+:root {
+    --black: #131a22;
+    --gray: #1f262d;
+    --green: #24af79;
+    --dgreen: #3D1766;
+    --dark-red: #CD0404;
+    --light-red: #FF0032;
+    --white: #f7f8fa;
+    --blue: #739CBF;
+    --yellow: #FAEF7E;
+    --font-size: 1.3rem;
+    --mono: 'Bebas Neue', cursive;
+    --sans: 'Montserrat', sans-serif;
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+    font-family: var(--sans);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
+  #intro {
+    height: 100vh;
+    background-image: url('https://www.valhalladc.cz/build/images/fe/slider/slider-top-1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0rem 1rem 1rem 1rem;
+  }
+  
+  .intro-container {
+    max-width: 1800px;
+    padding: 0 2rem;
+    text-align: right;
+  }
+  
+  .intro-name {
+    font-size: 3rem;
+    font-family: var(--mono);
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+  .intro-name span{
+    color: var(--green);
+  }
+    /*NAVBAR*/
+    nav {
+    font-family: var(--mono);
+    font-size: 1.8rem;
+    padding: 1rem;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    }
+  nav a {
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+  }
+  nav a:hover{
+    color: var(--green);
+  }
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1.5rem;
+    
+  }
+  nav li:first-child {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  /* Image slider */
+  
+  #image-slider {
+    min-height: 20em;
+    height: 90vh;
+    width: 97%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/imgs/OpenGym.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  image-slider * {
+    box-sizing: border-box;
+  }
+  .caption {
+    background: linear-gradient(
+    rgba(0,0,0,0),
+      #000
+    );
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4em 1em 2em 1em;
+  }
+  #image-slider h1{
+    color: var(--green);
+  }
+  .arrow-left,
+  .arrow-right{
+    background: var(--white);
+    position: absolute;
+    color: black;
+    top: 50%;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s
+  }
+  .arrow-left:hover,
+  .arrow-right:hover {
+    background: var(--green);
+    color: white;
+  }
+  .arrow-left{
+    left: 1em;
+  }
+  .arrow-right{
+    right: 1em;
+  }
+  .image-fade{
+    animation: imgFade 0.2s ease-in-out;
+  }
+  /* Quote */
+  .quote-block{
+    text-align: center;
+    margin: 8rem 0rem 8rem 0rem;
+
+  }
+  /* WORKOUTS */
+  
+  #workouts{
+    margin: 10rem 1rem 10rem 1rem;
+  }
+
+  #workouts h2 {
+    font-family: var(--mono);
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem; 
+  }
+  .card{
+    width: 23%;
+    background-color: var(--gray);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    min-height: 500px;
+    box-sizing: border-box;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s;
+  }
+  
+  .card h3{
+    text-align: center;
+    background-color: var(--black);
+    border-radius: 5px;
+    
+  }
+  .card p{
+    padding: 0rem 1rem 1.5rem 1rem;
+    overflow: auto;
+    height: 100%;
+  }
+  #card-icon{
+    color: var(--green);
+    display:flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 8px 20px 5px rgba(0, 0, 0, 1);
+  }
+  /* BMI CALCULATOR */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 1);
+  }
+  
+  #heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #bmi-output {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+   /*PRICES*/
+   #prices{
+    margin: 8rem 0rem 15rem 0rem;
+   }
+  .pricelist{
+    text-align: center;
+    margin: 3rem 0rem 3rem 0rem;
+  }
+  .price-container1{
+    display:flex;
+    justify-content: center;
+  }
+  .price-card{
+    border: 2px solid var(--green);
+    width: 33%;
+    text-align: center;
+    margin: 0rem 2rem 0rem 2rem;
+  }
+  .price-card h4{
+        width: 245px;
+      margin: -20px auto 0px;
+      background: var(--black);
+      font-size: 24px;
+      font-weight: 700;
+  }
+  .price-container2{
+    display:flex;
+    justify-content: space-around;
+  }
+  .price-text{
+    margin: 3rem 0rem 4rem 0rem;
+   text-align: center;
+  }
+   /*FOOTER*/
+   #footer{
+    margin-top: 3rem;
+   }
+  .map{
+    float: right;
+    margin: 0rem 1rem 1rem 0rem;
+  }
+  .footer1{
+     margin-right: 1rem;
+  }
+  .footer-text{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  #small-icon{
+    margin-right: 0.5rem;
+  }
+  .links a{
+    text-decoration: none;
+    color: var(--white);
+  }
+  .links a:hover{
+    color: var(--green);
+    /*LOADER*/
+  }
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    z-index: 9999;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: var(--green);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes imgFade{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @media (min-width: 768px){
+    nav li:first-child {
+    margin-right:auto;
+    flex-basis: auto;
+  }
+  }
+  @media screen and (max-width: 768px) {
+    /* adjust card layout for tablets */
+    
+    .card {
+      flex-basis: 48%;
+    }
+    .price-container2{
+      flex-direction: column;
+      align-items: center;
+    }
+    .price-card{
+      width: 66%;
+      margin: 1.5rem 0rem 1.5rem 0rem;
+    }
+      .footer-text {
+      justify-content: center;
+      flex-basis: 78%;
+    }
+    .map {
+      display:none;
+    }
+  }
+  @media screen and (max-width: 414px){
+    .card{
+      flex-basis: 98%;
+    }
+    .price-card{
+      width: 89%;
+    }
+    .footer-text {
+      flex-direction: column;
+      flex-basis: 78%;
+    }
+    .footer2{
+      margin-top: 2rem;
+    }
+  }
+  
