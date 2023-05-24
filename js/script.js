@@ -53,12 +53,7 @@ arrRight.addEventListener('click', () => {
   }
   slide(id);
 });
-window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 2000); // replace 2000 with the duration of your content load
-  });
+
 
   /*SCROLL ANIMATION*/
   const sr = ScrollReveal({
