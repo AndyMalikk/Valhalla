@@ -104,15 +104,15 @@
   #image-slider {
     min-height: 20em;
     height: 90vh;
-    width: 97%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
-    background-image: url("/imgs/OpenGym.jpg");
+    background-image: url("imgs/Recepce.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transition: 0.3s;
-    border-radius: 15px;
+    margin: 4rem 0;
   }
   #image-slider * {
     box-sizing: border-box;
